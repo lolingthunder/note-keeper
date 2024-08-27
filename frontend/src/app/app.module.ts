@@ -4,16 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './core/login/login.component';
+import {SidebarComponent} from "./components/sidebar/sidebar.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        SidebarComponent
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
