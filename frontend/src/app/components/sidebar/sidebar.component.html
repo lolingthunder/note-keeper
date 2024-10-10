@@ -1,0 +1,15 @@
+<div class="d-flex flex-row">
+  <div class="sidebar-head p-3 text-white">
+    <h2>KEEPER</h2>
+    <div class="text-info">Hello Samantha></div>
+    <div class="sidebar-content">
+      <ng-container *ngFor="let path of contentList;">
+        <div class="mt-3 each-content" routerLinkActive="active" [routerLink]="path.path">
+            <span>I</span>
+            <span>{{ path.name}}</span>
+        </div>
+       </ng-container>
+    </div>
+  </div>
+  <ng-content select="[routerOutlet]"></ng-content>
+</div>

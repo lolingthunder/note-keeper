@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+@import 'styles/variables';
+
+html,
+body {
+  min-height: 100%;
+  overflow-y: hidden;
+  margin: 0;
+  max-width: 100vw;
+  background: $black;
+  color: $light;
+  :host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+    outline: none !important;
+    -webkit-animation: fadein 400ms;
+    -moz-animation: fadein 400ms;
+    -ms-animation: fadein 400ms;
+    -o-animation: fadein 400ms;
+    animation: fadein 400ms;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  font-weight: normal;
+}
+
+.content-field {
+  margin-top: 15px;
+  padding: 1rem;
+  background: $light-black;
+}

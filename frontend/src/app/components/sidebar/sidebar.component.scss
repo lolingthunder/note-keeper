@@ -1,0 +1,25 @@
+@import '../../../styles/variables';
+
+.sidebar-head {
+  background: $light-black;
+  height: 100vh;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  color: $light;
+  font-size: 16px;
+}
+
+.active {
+  background-color: $dark-black;
+}
+
+.each-content {
+  width: 100%
+}
