@@ -19,4 +19,10 @@ export class AppComponent implements OnInit {
 
 
   }
+
+  deleteContent(id: number): void {
+    this.httpService.deleteArticle(id).subscribe(  () => {
+      this.ngOnInit()
+    })
+  }
 }

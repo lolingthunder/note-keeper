@@ -11,6 +11,9 @@ export class HttpServiceService {
   }
 
   getArticle() {
-    return this.http.get(`http://localhost:1337/api/articles/`)
+    return this.http.get(`http://localhost:1337/api/categories/`)
+  }
+  deleteArticle(id:number) {
+    return this.http.delete(`http://localhost:1337/api/categories/${id}/`)
   }
 }
