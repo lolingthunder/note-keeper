@@ -10,8 +10,11 @@
       </div>
     </div>
     <div class="container-xl overflow-auto">
-      <div class="content-field content-field">
-        sdfsdf
+      <div class="content-field content-field bg-white">
+        <div *ngFor="let data of result.data" class="text-danger d-flex flex-column border p-2">
+          <h5>{{data.title}}</h5>
+          <span > {{data.description}}</span>
+        </div>
         <router-outlet></router-outlet>
        </div>
     </div>
