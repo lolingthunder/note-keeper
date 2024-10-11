@@ -1,12 +1,4 @@
 @import '../../../styles/variables';
-
-.sidebar-head {
-  background: $light-black;
-  height: 100vh;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-}
 .sidebar-content {
   display: flex;
   align-items: center;
@@ -18,9 +10,9 @@
   border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.08) 0 0 0;
   border: 0;
-  height: 100vh;
   margin: 1.5rem;
   padding: 1rem;
+  height: calc(100vh - 40px);
 }
 
 .active {
